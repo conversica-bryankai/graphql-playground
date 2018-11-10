@@ -4,7 +4,7 @@ Sample Requests:
 
 For one book, get the name, id, and author information
 
-```{
+````{
 book (id: 2) {
 name
 author {
@@ -35,6 +35,17 @@ Get all books with authors
     author {
       name
     }
+  }
+}
+````
+
+Mutations
+
+```
+mutation {
+  addAuthor(name:"Bryan", age:27) {
+    name
+    age
   }
 }
 ```
